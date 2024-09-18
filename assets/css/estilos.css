@@ -1,0 +1,148 @@
+body {
+    background-color: #d8cdf8a5;
+    font-family: Arial, sans-serif;
+}
+h1, h2 {
+    text-align: center;
+  }
+.card {
+    border: none;
+    border-radius: .55rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.chat-list {
+    height: 80vh;
+    overflow-y:hidden;
+    background-color: #8391fa16;
+
+
+}
+
+.perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden; 
+
+
+}
+.perfil:hover{
+    transform: scale(2); 
+
+}
+
+.chat-window {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.chat-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #8391fa3e;
+}
+
+.mensaje {
+    margin-bottom: 15px;
+}
+
+.mensaje-contenido {
+    max-width: 75%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mensaje.recibido .mensaje-contenido {
+    background-color: #e9ecef;
+    margin-right: auto;
+}
+
+.mensaje.enviado .mensaje-contenido {
+    background-color: #007bffa5;
+    color: #ffffff;
+    margin-left: auto;
+}
+
+.mensaje-hora {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.card-footer {
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #dee2e6;
+}
+
+.form-control {
+    border-radius: 1.25rem;
+}
+#logo-svg {
+    width: 40px;
+    height: auto;
+    transition: width 0.3s ease;
+  }
+  #logo-svg:hover {
+    background-color: aqua;
+  }
+
+  @media (min-width: 768px) {
+    #logo-svg path {
+      fill: red; /* Cambia el color en pantallas */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    #logo-svg path {
+      fill: blue; 
+    }
+  }
+  .calendar-table {
+    table-layout: fixed;
+}
+.calendar-table td, .calendar-table th {
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+.calendar-table th {
+    background-color: #f8f9fa;
+}
+.event {
+    background-color: #e3f2fd;
+    border: 1px solid #2196F3;
+}
+.today {
+    background-color: #fff3cd;
+    border: 1px solid #ffc107;
+}
+.notificado h6 {
+    font-weight: bold;
+}
+
+#card-container{
+    flex: 1; 
+    max-width: 300px; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#indexcard{
+    width: 100%;
+    height: 100px; 
+    object-fit: cover; 
+}
+.texto-negrita {
+    font-weight: bold;
+}
+
+.texto-normal {
+    font-weight: normal;
+}

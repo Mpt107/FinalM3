@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Chat Simple</title>
+        <!-- Bootstrap CSS -->
+        <link href="./assets/css/css_bs/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link href="./assets/css/estilos.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+		<div class="container-fluid">
+			<!-- SVG Logo linked to the homepage -->
+			<a class="navbar-brand" href="index.html">
+				<svg id="logo-svg" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" aria-label="Logo">
+					<path d="M144.5 210.9C152.2 197.3 163.7 189.3 175.1 189.3c12.35 0 23.86 8 31.48 21.62l9.566 17c4.117 7.375 15.62 4 14.89-4.5C228.6 181.3 199.7 152 175.1 152c-23.86 0-52.82 29.25-56.09 71.38c-.6055 8.5 10.9 11.88 15.14 4.5L144.5 210.9zM370.4 288H141.6c-8.113 0-14.41 7-13.44 15C135.6 362.3 186.1 408 249.2 408h13.56c62.24 0 113.6-45.75 121.1-105C384.8 295 378.5 288 370.4 288zM336 152c-23.86 0-52.78 29.25-56.04 71.38C279.3 232 290.8 235.3 294.9 227.9l9.566-17c7.629-13.62 19.13-21.62 31.48-21.62c12.23 0 23.73 8 31.48 21.62l9.445 17c4.117 7.375 15.62 4 14.89-4.5C388.7 181.3 359.8 152 336 152zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-114.7 0-208-93.31-208-208S141.3 48 256 48s208 93.31 208 208S370.7 464 256 464z" />
+				</svg>
+			</a>
+	
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="faq.html">Preguntas frecuentes</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="manuales.html">Manuales y tutoriales</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="noticias.html">Noticias</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="calendario.html">Calendario</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="admin.html">Administración de perfil de usuario</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="organigrama.html">Organigrama de la empresa</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="chat.html">Chat para vendedores y equipo de soporte</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container mt-4">
+        <h1>Administración de Perfil de Usuario</h1>
+        <p>Aquí puedes actualizar tu información personal y gestionar la configuración de tu perfil.</p>
+
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Información Personal</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="username" value="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" value="">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone" class="form-label">Número de teléfono</label>
+                        <input type="tel" class="form-control" id="phone" value="">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Cambiar Contraseña</h5>
+                <form>
+                    <div class="mb-3">
+                        <label for="current-password" class="form-label">Contraseña actual</label>
+                        <input type="password" class="form-control" id="current-password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="new-password" class="form-label">Nueva contraseña</label>
+                        <input type="password" class="form-control" id="new-password">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm-password" class="form-label">Confirmar nueva contraseña</label>
+                        <input type="password" class="form-control" id="confirm-password">
+                    </div>
+                    <button type="submit" class="btn btn-danger">Cambiar contraseña</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-body">
+                <h5 class="card-title">Preferencias de Notificaciones</h5>
+                <form>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="email-notifications" checked>
+                        <label class="form-check-label" for="email-notifications">
+                            Recibir notificaciones por correo electrónico
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="sms-notifications">
+                        <label class="form-check-label" for="sms-notifications">
+                            Recibir notificaciones por SMS
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-secondary mt-3">Actualizar preferencias</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+	<script src="./assets/js/logica.js"></script>
+	<script src="./assets/js/js_bs/bootstrap.bundle.js"></script></body>
+</html>
